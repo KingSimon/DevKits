@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端开发工具集合</title>
+    <link href="../scss/ui/popup.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.3/jquery.js"></script>
+    <script src="../js/mustache/mustache.js"></script>
+    <script src="../logic/popup.js"></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li id="tab-stylesheets">{{style_sheets}}
+        <li id="tab-forms">{{forms}}
+        <li id="tab-images">{{images}}
+        <li id="tab-miscellaneous">{{miscellaneous}}
+        <li id="tab-tools">{{tools}}
+        <li id="tab-resize">{{resize_browser}}
+        <li id="tab-accessibility">{{accessibility}}
+        <li id="open-options">{{options}}
+    </ul>
+</nav>
+<section id="stylesheets">
+    <ul>
+        <li id="view-css">{{view_css}}
+        <li id="reload-css">{{reload_css}}
+        <li class="sep">
+        <li id="disable-all-styles">{{disable_all_styles}}
+        <li id="disable-inline-styles">{{disable_inline_styles}}
+        <li id="disable-embedded-styles">{{disable_embedded_styles}}
+        <li id="disable-linked-style-sheets">{{disable_linked_style_sheets}}
+        <li class="sep">
+        <li id="show-used-colors">{{show_used_colors}}
+    </ul>
+</section>
+<section id="forms">
+    <ul>
+        <li id="show-passwords">{{show_passwords}}
+        <li id="remove-maxlength-attributes">{{remove_maxlength_attributes}}
+        <li id="convert-select-elements-to-text-inputs">{{convert_select_to_inputs}}
+        <li id="show-hidden-elements">{{show_hidden_elements}}
+        <li id="clear-radio-buttons">{{clear_radio_buttons}}
+        <li id="enable-form-elements">{{enable_form_elements}}
+        <li class="sep">
+        <li id="convert-gets-to-posts">{{convert_gets_to_posts}}
+        <li id="convert-posts-to-gets">{{convert_posts_to_gets}}
+    </ul>
+</section>
+<section id="images">
+    <ul>
+        <li id="view-images-information">{{view_images_information}}
+        <li class="sep">
+        <li id="hide-all-images">{{hide_all_images}}
+        <li id="hide-background-images">{{hide_background_images}}
+        <li class="sep">
+        <li id="show-alt-text-note">{{show_alt_text_note}}
+        <li id="show-dimensions-note">{{show_dimensions_note}}
+        <li id="show-paths-note">{{show_paths_note}}
+    </ul>
+</section>
+<section id="miscellaneous">
+    <ul>
+        <li id="view-javascript">{{view_javascript}}
+        <li id="view-generated-source">{{view_generated_source}}
+        <li class="sep">
+        <li id="display-ruler">{{display_ruler}}
+        <li id="display-color-picker">{{display_color_picker}}
+        <li class="sep">
+        <li id="topographic-view">{{topographic_view}}
+        <li id="remove-cookies">{{remove_cookies}}
+    </ul>
+</section>
+<section id="tools">
+    <ul>
+        <li id="tools-encode-decode">{{encode_decode}}
+        <li id="tools-json-format">{{json_format}}
+        <li id="tools-code-beautify">{{code_beautify}}
+        <!--<li id="tools-code-compress">{{code_compress}}-->
+        <li id="tools-qrcode">{{qrcode}}
+        <li id="tools-regexp">{{regexp}}
+        <li id="tools-timestamp">{{timestamp}}
+        <li id="tools-imagebase64">{{imagebase64}}
+        <li id="tools-codestandard">{{code_standard}}
+        <li id="tools-web-performance">{{web_performance}}
+        <li id="tools-ajaxdebugger">{{ajaxdebugger}}
+        <li class="sep">
+    </ul>
+</section>
+<section id="resize">
+    <ul>
+        <li id="display-window-size">{{display_window_size}}</li>
+        <li id="view-responsive-layouts">{{view_responsive_layouts}}</li>
+    </ul>
+    <ul class="dimensions">
+        <li id="resize-320x480">320 x 480</li>
+        <li id="resize-640x480">640 x 480</li>
+        <li id="resize-480x800">480 x 800</li>
+        <li id="resize-800x600">800 x 600</li>
+        <li id="resize-1024x768">1024 x 768</li>
+    </ul>
+    <ul class="dimensions">
+        <li id="resize-1280x800">1280 x 800</li>
+        <li id="resize-1280x1024">1280 x 1024</li>
+        <li id="resize-1366x768">1366 x 768</li>
+        <li id="resize-1440x900">1440 x 900</li>
+        <li id="resize-1600x900">1600 x 900</li>
+    </ul>
+    <p>
+        {{custom_size}}: <input type="text" id="custom-size-width">&nbsp;x&nbsp;<input type="text" id="custom-size-height">&nbsp;
+        <button id="custom-size">{{resize}}</button>
+    </p>
+</section>
+<section id="accessibility">
+    <ul>
+        <li id="validate-html">{{validate_html}}
+        <li id="validate-css">{{validate_css}}
+        <li class="sep">
+        <li id="validate-links">{{validate_links}}
+        <li id="validate-feed">{{validate_feed}}
+        <li class="sep">
+        <li id="validate-accessibility">{{validate_accessibility}}
+        <li class="sep">
+        <li id="validate-local-html">{{validate_local_html}}
+        <li id="validate-local-css">{{validate_local_css                                                                                                                                                                                                                                                                                                                                    }}
+    </ul>
+</section>
+<div id="notification"></div>
+</body>
+</html>

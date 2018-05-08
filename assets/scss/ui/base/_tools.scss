@@ -1,0 +1,76 @@
+@each $value in $value-list {
+  .h-#{$value}{
+    height:  #{$value}px !important;
+  }
+  .w-#{$value}{
+    width: #{$value}px !important;
+  }
+  .h-#{$value}p{
+    height: percentage($value/100) !important;
+  }
+  .w-#{$value}p{
+    width: percentage($value/100) !important;
+  }
+
+  .p-#{$value}{
+    padding: #{$value}px !important;
+  }
+  .pl-#{$value}{
+    padding-left: #{$value}px !important;
+  }
+  .pt-#{$value}{
+    padding-top: #{$value}px !important;
+  }
+  .pr-#{$value}{
+    padding-right: #{$value}px !important;
+  }
+  .pb-#{$value}{
+    padding-bottom: #{$value}px !important;
+  }
+  .m-#{$value}{
+    margin: #{$value}px !important;
+  }
+  .ml-#{$value}{
+    margin-left: #{$value}px !important;
+  }
+  .mt-#{$value}{
+    margin-top: #{$value}px !important;
+  }
+  .mr-#{$value}{
+    margin-right: #{$value}px !important;
+  }
+  .mb-#{$value}{
+    margin-bottom: #{$value}px !important;
+  }
+  @if $value != 0 {
+    .m-n#{$value}{
+      margin: -#{$value}px !important;
+    }
+    .ml-n#{$value}{
+      margin-left: -#{$value}px !important;
+    }
+    .mt-n#{$value}{
+      margin-top: -#{$value}px !important;
+    }
+    .mr-n#{$value}{
+      margin-right: -#{$value}px !important;
+    }
+    .mb-n#{$value}{
+      margin-bottom: -#{$value}px !important;
+    }
+  }
+}
+
+//@each $name, $color in $color-list {
+//  $btn-color: #fefefe;
+//  $btn-bg:$color;
+//  $btn-border:$color;
+//  .btn-#{$name} {
+//    @include button-variant($btn-color, $btn-bg, $btn-border);
+//  }
+//}
+//
+//@each $name, $color in $color-list {
+//  @include bg-variant('.bg-#{$name}', $color);
+//  @include text-emphasis-variant('.text-#{$name}', $color);
+//}

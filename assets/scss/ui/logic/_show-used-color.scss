@@ -1,0 +1,47 @@
+body {
+  font: 12px Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+  width: 700px;
+  margin: 15px auto;
+}
+#title {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+  font-size: 13px;
+  color: #6d6d67;
+  text-shadow: 1px 1px 0 rgba(255,255,255,.25);
+  background: #eee url(#{$tools-img-url}/color-swatch.png) 7px center no-repeat;
+  text-indent: 20px;
+  border-radius: 5px;
+  min-height: 15px;
+  min-width: 8px;
+}
+#colors {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 15px 10px 5px 10px;
+  background-color: #fafafa;
+  box-shadow: rgba(0,0,0,.25) 0 .5px 7px;
+  border-radius: 7px;
+  min-height: 20px;
+}
+#colors li {
+  display: inline-block;
+  vertical-align: top; /* rgba height */
+  width: 20%;
+}
+#colors li .strip {
+  padding: 10px 0;
+  margin: 0 7px;
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 7px #555;
+}
+#colors li .info {
+  color: #484848;
+  padding: 5px 12px 10px 12px;
+}
+#colors li .info p {
+  margin: 0;
+  text-indent: 2px;
+}

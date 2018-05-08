@@ -1,0 +1,20 @@
+@mixin gradient($color1,$color2,$type:'h') {
+  $gradientType : 1;
+  $gradientType2 : 'left';
+  $gradientType3 : '0% 0%,100% 0%';
+  $gradientType4 : 'right top,left top';
+  @if($type == 'v'){
+    $gradientType : 0;
+    $gradientType2 : 'top';
+    $gradientType3 : '0% 0%,0% 100%';
+    $gradientType4 : 'left bottom,left top';
+  }
+
+
+  FILTER: unquote("progid:DXImageTransform.Microsoft.Gradient(gradientType=#{$gradientType},startColorStr=#{$color1},endColorStr=#{$color2})"); /*IE*/
+  background: unquote("-moz-linear-gradient(#{$gradientType2},#{$color1},#{$color2})"); /*火狐*/
+  background: unquote("-webkit-gradient(linear,#{$gradientType3} ,from(#{$color1}), to(#{$color2}))"); /*谷歌*/
+  background-image: unquote("-webkit-gradient(linear,#{$gradientType4},color-start(0, #{$color1}),color-stop(1, #{$color2}))"); /* Safari & Chrome*/
+  filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=#{$gradientType},startColorstr='#{$color1}', endColorstr='#{$color2}')"); /*IE6 & IE7*/
+  -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=#{$gradientType},startColorstr='#{$color1}', endColorstr='#{$color2}')"); /* IE8 */
+}

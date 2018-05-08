@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+table {
+  border-spacing: 0px 0px;
+  counter-reset: lines 0;
+  font-family: monospace;
+  font-size: initial;
+  margin: 0px;
+  white-space: pre-wrap !important;
+  width: 100%;
+  word-break: break-word;
+}
+.webkit-line-gutter-backdrop {
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.webkit-line-gutter-backdrop, .webkit-line-number {
+  -webkit-box-sizing: border-box;
+  -webkit-user-select: none;
+  background-color: #F0F0F0;
+  border-right: 1px solid #bbb;
+  padding: 0px 4px;
+  width: 31px;
+}
+.webkit-line-number {
+  vertical-align: baseline;
+  color: gray;
+  font-family: Helvetica;
+  font-size: 9px;
+  text-align: right;
+  white-space: nowrap;
+  word-break: normal;
+}
+.webkit-line-number::before {
+  content: counter(lines);
+  counter-increment: lines 1;
+  -webkit-user-select: none;
+}
+.webkit-line-content {
+  vertical-align: baseline;
+  padding: 0 5px;
+}
+.webkit-html-comment {
+  color: #236e25;
+}
+.webkit-html-tag {
+  color: #881280;
+}
+.webkit-html-attribute-name {
+  color: #994500;
+}
+.webkit-html-attribute-value {
+  color: #1a1aa6;
+}
+.webkit-html-doctype {
+  color: rgb(192, 192, 192);
+}
+.webkit-html-external-link, .webkit-html-resource-link {
+  color: #00e;
+}
+.webkit-html-external-link {
+  text-decoration: none;
+}
+.webkit-html-external-link:hover {
+  text-decoration: underline;
+}

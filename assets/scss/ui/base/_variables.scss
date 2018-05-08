@@ -1,0 +1,34 @@
+$img-url:'../../img/';
+$tools-img-url:'../../img/tools/';
+$font-family: 'Source Sans Pro', sans-serif;
+$body-color:#323232;
+$body-font-size:14px;
+
+
+$brand-green: #47a447 !default;
+$brand-lightgreen: #a2d200 !default;
+$brand-cyan: #52ccf2 !default;
+$brand-red: #d2322d !default;
+$brand-lightred: #ff7b76 !default;
+$brand-amethyst: #cd97eb !default;
+$brand-orange: #ed9c28 !default;
+$brand-yellow: #D7DF01 !default;
+$brand-greensea: #1ccdaa !default;
+$brand-hotpink: #ff3385 !default;
+$brand-drank: #d5099c !default;
+$brand-dutch: #1cbbd2 !default;
+$brand-blue: #69a3d5 !default;
+$brand-redbrown: #c0392b !default;
+$brand-purple: #9b59b6 !default;
+$brand-slategray: #536781 !default;
+$brand-inverse: #555555 !default;
+$brand-dark: #333 !default;
+$brand-transparent: rgba(0, 0, 0, 0.1) !default;
+
+$color-list: ('green', $brand-green), ('lightgreen', $brand-lightgreen), ('cyan', $brand-cyan), ('red', $brand-red), ('lightred', $brand-lightred),
+        ('amethyst', $brand-amethyst), ('orange', $brand-orange), ('yellow', $brand-yellow), ('greensea', $brand-greensea),
+        ('hotpink', $brand-hotpink), ('drank', $brand-drank), ('dutch', $brand-dutch), ('blue', $brand-blue),
+        ('redbrown', $brand-redbrown), ('purple', $brand-purple), ('slategray', $brand-slategray), ('inverse', $brand-inverse),
+        ('dark', $brand-dark),('transparent', $brand-transparent);
+
+$value-list: 0,5,10,15,20,30,40,50,60,70,80,90,100;

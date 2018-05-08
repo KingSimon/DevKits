@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端开发工具集合</title>
+    <link href="../scss/ui/options.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.3/jquery.js"></script>
+    <script src="../js/mustache/mustache.js"></script>
+    <script src="../logic/options.js"></script>
+</head>
+<body>
+<header>
+    <h1>{{application_title}}</h1>
+    <small>1.0.0</small>
+    <!--<a id="contribute" class="green"-->
+       <!--href=""-->
+       <!--title="Like this extension? Help support its continued development by making a donation.">Contribute</a>-->
+</header>
+
+<nav>
+    <ul>
+        <li id="options" class="current">{{op_options}}</li>
+        <li id="keyboard-shortcuts">{{op_keyboard_shortcuts}}</li>
+        <li id="about">{{op_about}}</li>
+    </ul>
+</nav>
+
+<section id="box-options" class="current">
+    <h3>{{op_accessibility_settings}}</h3>
+    <div>
+        <label for="validate-html">{{op_validate_html}}</label>
+        <input id="validate-html" type="url">
+    </div>
+    <div>
+        <label for="validate-css">{{op_validate_css}}</label>
+        <input id="validate-css" type="url">
+    </div>
+    <div>
+        <label for="validate-links">{{op_validate_links}}</label>
+        <input id="validate-links" type="url">
+    </div>
+    <div>
+        <label for="validate-feed">{{op_validate_feed}}</label>
+        <input id="validate-feed" type="url">
+    </div>
+    <div>
+        <label for="validate-accessibility">{{op_validate_accessibility}} (<abbr
+                title="Web Accessibility Initiative">WAI</abbr>)</label>
+        <input id="validate-accessibility" type="url">
+    </div>
+    <div class="multi">
+        <label>{{op_validate_local_html}}</label>
+        <div>
+            <label>
+                <input type="checkbox" id="show-source">
+                <span>{{op_show_source}}</span>
+            </label>
+            <label>
+                <input type="checkbox" id="show-outline">
+                <span>{{op_show_outline}}</span>
+            </label>
+            <label>
+                <input type="checkbox" id="verbose-output">
+                <span>{{op_verbose_output}}</span>
+            </label>
+        </div>
+    </div>
+    <div class="multi">
+        <label>{{op_validate_local_css}}</label>
+        <div>
+            <label>
+                <input type="radio" name="css_profile" id="css2">
+                <span>CSS 2.1</span>
+            </label>
+            <label>
+                <input type="radio" name="css_profile" id="css3">
+                <span>CSS 3</span>
+            </label>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="accessibility-save-button">{{op_save}}</button>
+        <button id="accessibility-reset-button">{{op_reset}}</button>
+        <span id="accessibility-save-status">{{op_options_saved}}</span>
+    </div>
+</section>
+
+<section id="box-keyboard-shortcuts">
+    <h3>{{op_manage_keyboard_shortcuts}}</h3>
+    <div>
+        <label for="view-all-styles">{{op_view_all_styles}}</label>
+        <input type="text" id="view-all-styles">
+        <span id="invalid-shortcut-view-all-styles">{{op_invalid_shortcut}}</span>
+    </div>
+    <div>
+        <label for="reload-css">{{op_reload_css}}</label>
+        <input type="text" id="reload-css">
+        <span id="invalid-shortcut-reload-css">{{op_invalid_shortcut}}</span>
+    </div>
+    <div>
+        <label for="disable-all-styles">{{op_disable_all_styles}}</label>
+        <input type="text" id="disable-all-styles">
+        <span id="invalid-shortcut-disable-all-styles">{{op_invalid_shortcut}}</span>
+    </div>
+    <div>
+        <label for="view-javascript">{{op_view_javascript}}</label>
+        <input type="text" id="view-javascript">
+        <span id="invalid-shortcut-view-javascript">{{op_invalid_shortcut}}</span>
+    </div>
+    <div>
+        <label for="view-generated-source">{{op_view_generated_source}}</label>
+        <input type="text" id="view-generated-source">
+        <span id="invalid-shortcut-view-generated-source">{{op_invalid_shortcut}}</span>
+    </div>
+    <div>
+        <label for="display-ruler">{{op_display_ruler}}</label>
+        <input type="text" id="display-ruler">
+        <span id="invalid-shortcut-display-ruler">{{op_invalid_shortcut}}</span>
+    </div>
+    <div>
+        <label for="display-color-picker">{{op_display_color_picker}}</label>
+        <input type="text" id="display-color-picker">
+        <span id="invalid-shortcut-display-color-picker">{{op_invalid_shortcut}}</span>
+    </div>
+    <div class="buttons">
+        <button id="shortcuts-save-button">{{op_save}}</button>
+        <button id="shortcuts-reset-button">{{op_reset}}</button>
+        <span id="shortcuts-save-status">{{op_shortcuts_saved}}</span>
+    </div>
+</section>
+
+<section id="box-about">
+    <h3>{{op_about}}</h3>
+    <p>Test.</p>
+</section>
+</body>
+</html>

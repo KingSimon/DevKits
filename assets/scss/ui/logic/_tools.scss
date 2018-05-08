@@ -1,0 +1,51 @@
+body {
+  background-color: #eee;
+  font-family: Arial, "simsun";
+  color: #666;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #FFF;
+}
+
+.ui-ml-05 {
+  margin-left: 5px;
+}
+
+.ui-ml-10 {
+  margin-left: 10px;
+}
+
+.ui-mb-10 {
+  margin-bottom: 10px;
+}
+
+.ui-mt-10 {
+  margin-top: 10px;
+}
+
+.ui-mt-20 {
+  margin-top: 20px;
+}
+
+.ui-d-ib {
+  display: inline-block;
+}
+
+.ui-d-n {
+  display: none;
+}
+
+.ui-fl-r {
+  float: right;
+}
+
+.panel-subtitle {
+  border-left: solid 3px #428bca;
+  text-indent: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}

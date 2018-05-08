@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,GAAI,CAAC,UAAU,CAAE,iBAAiB",
+"sources": ["logic/_hide-images.scss"],
+"names": [],
+"file": "hide-images.css"
+}
